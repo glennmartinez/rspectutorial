@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <title>Add Page - Demonstration Space - Confluence</title>
+
+        
+
+                        
+    
+                        
+    
+
+    <meta content="IE=EDGE,chrome=IE7" http-equiv="X-UA-Compatible" />
+<meta charset="UTF-8" />
+<!-- Deprecated since 3.4. To be removed in a future version of Confluence; use AJS.Confluence.getContextPath() -->
+<meta content="" name="confluence-context-path" id="confluence-context-path" />
+<meta content="http://localhost:8090" name="confluence-base-url" id="confluence-base-url" />
+
+<meta content="fccf1b10488670bd5552836152da631e52e199b0" name="atlassian-token" id="atlassian-token" />
+
+<meta content="ds" name="confluence-space-key" id="confluence-space-key" />
+<script type="text/javascript">
+    // Deprecated global variables. To be removed in a future version of Confluence.
+    var contextPath = '';
+</script>
+
+    
+
+<!-- include system css resources -->
+
+
+    <link media="all" href="/s/en_GB/3289/1/3/_/download/superbatch/css/batch.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/en_GB/3289/1/3/_/download/superbatch/css/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<!--[if IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/en_GB/3289/1/3/_/download/superbatch/css/batch.css?conditionalComment=IE+9" media="all">
+<![endif]-->
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/en_GB/3289/1/3/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+9" media="all">
+<![endif]-->
+<link media="print" href="/s/en_GB/3289/1/3/_/download/superbatch/css/batch.css?media=print" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/en_GB/3289/1/f93343323d495c91fff71b09cb90d4c5/_/download/contextbatch/css/editor,macro-browser/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<link media="all" href="/s/en_GB/3289/1/f93343323d495c91fff71b09cb90d4c5/_/download/contextbatch/css/editor,macro-browser/batch.css" rel="stylesheet" type="text/css" />
+<link media="all" href="/s/en_GB/3289/1/e9f46883ce5cc7eebdca3bb0b56785f1/_/download/contextbatch/css/page/batch.css" rel="stylesheet" type="text/css" />
+<link media="all" href="/s/en_GB/3289/1/24/_/styles/colors.css?spaceKey=ds" rel="stylesheet" type="text/css" />
+<link media="all" href="/s/en_GB/3289/1/4.2.8/_/download/resources/com.atlassian.confluence.plugins.doctheme:documentation/default-theme.css" rel="stylesheet" type="text/css" />
+<link media="all" href="/s/en_GB/3289/1/4.2.8/_/download/resources/com.atlassian.confluence.plugins.doctheme:documentation/splitter.css" rel="stylesheet" type="text/css" />
+
+<!-- end system css resources -->
+
+    <meta content="noindex,nofollow" name="robots" />
+    <meta content="noarchive" name="robots" />
+    <meta content="1344847552202" name="confluence-request-time" />
+<!-- Deprecated since 3.4. To be removed in a future version of Confluence; use atl.header -->
+        
+            <script title="share-content-popup" type="text/x-template">
+    &lt;form action="#" method="post" class="aui share-content-popup"&gt;
+        &lt;fieldset&gt;
+            &lt;label for="users"&gt;User name or email&lt;/label&gt;
+            &lt;div class="autocomplete-user-target"&gt;
+                &lt;input class="text autocomplete-sharepage" id="users" data-max="10" data-dropdown-target=".autocomplete-user-target" data-none-message="No matching user or email found"/&gt;
+            &lt;/div&gt;
+            &lt;ol class="recipients"&gt;
+            &lt;/ol&gt;
+            &lt;div&gt;&lt;label for="note"&gt;Note&lt;/label&gt;&lt;/div&gt;
+            &lt;textarea class="textarea" id="note" placeholder="Add an optional note"/&gt;
+        &lt;/fieldset&gt;
+        &lt;div class="button-panel"&gt;
+            &lt;div class="progress-messages-icon"&gt;&lt;/div&gt;
+            &lt;div class="progress-messages"&gt;
+            &lt;/div&gt;
+            &lt;input class="button submit" type="submit" value="Share" disabled/&gt;
+            &lt;a class="close-dialog" href="#"&gt;Cancel&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+</script>
+
+<script title="share-content-popup-recipient-username" type="text/x-template">
+    &lt;li data-username="{username}" style="display: none"&gt;
+        &lt;span&gt;
+            &lt;img src="{thumbnailLink.href}" title="{title}"&gt;
+            &lt;span&gt;{title}&lt;/span&gt;
+            &lt;span class="remove-recipient"/&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+</script>
+
+<script title="share-content-popup-recipient-email" type="text/x-template">
+    &lt;li data-email="{email}" style="display: none"&gt;
+        &lt;span&gt;
+            &lt;img src="{icon}" title="{email}"&gt;
+            &lt;span&gt;{email}&lt;/span&gt;
+            &lt;span class="remove-recipient"/&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+</script>
+    
+        
+            <meta content="3378b292bdeefa462977ab4f55fa760a" name="ajs-keyboardshortcut-hash" />
+            <meta content="true" name="ajs-use-keyboard-shortcuts" />
+            
+    
+    
+            <meta content="0" name="ajs-page-id" />
+            <meta content="createpageform" name="ajs-form-name" />
+            <meta content="ds" name="ajs-space-key" />
+            <meta content="Demonstration Space" name="ajs-space-name" />
+            <meta content="" name="ajs-original-parent-page" />
+            <meta content="" name="ajs-parent-page-id" />
+            <meta content="create" name="ajs-browse-page-tree-mode" />
+            <meta content="" name="ajs-original-content-title" />
+            <meta content="page" name="ajs-content-type" />
+            <meta content="" name="ajs-min-editor-height" />
+            <meta content="/s/en_GB/3289/1/4.2.8/_" name="ajs-editor-plugin-resource-prefix" />
+            <meta content="0" name="ajs-num-attachments" />
+            <meta content="true" name="ajs-auto-start" />
+            <meta content="884795" name="ajs-content-id" />
+            <meta content="true" name="ajs-save-drafts" />
+            <meta content="en_GB" name="ajs-action-locale" />
+            <meta content="true" name="ajs-heartbeat" />
+            <meta content="true" name="ajs-new-page" />
+            <meta content="884795" name="ajs-attachment-source-content-id" />
+            <meta content="richtext" name="ajs-editor-mode" />
+            <meta content="page" name="ajs-draft-type" />
+            <meta content="true" name="ajs-can-attach-files" />
+            <meta content="300" name="ajs-max-thumb-width" />
+            <meta content="false" name="ajs-is-dev-mode" />
+            <meta content="30000" name="ajs-draft-save-interval" />
+            <meta content="true" name="ajs-show-hidden-user-macros" />
+            <meta content="true" name="ajs-is-admin" />
+            <meta content="false" name="ajs-confluence.prefs.editor.disable.autocomplete" />
+            <meta content="false" name="ajs-confluence.prefs.editor.disable.autoformat" />
+            <meta content="30000" name="ajs-heartbeat-interval" />
+            <meta content="" name="ajs-from-page-title" />
+            <meta content="" name="ajs-context-path" />
+            <meta content="http://localhost:8090" name="ajs-base-url" />
+            <meta content="4.2.8" name="ajs-version-number" />
+            <meta content="3289" name="ajs-build-number" />
+            <meta content="admin" name="ajs-remote-user" />
+            <meta content="/s/en_GB/3289/1/_" name="ajs-static-resource-url-prefix" />
+            <meta content="10485760" name="ajs-global-settings-attachment-max-size" />
+            <meta content="en_GB" name="ajs-user-locale" />
+            <meta content="" name="ajs-enabled-dark-features" />
+            <meta content="fccf1b10488670bd5552836152da631e52e199b0" name="ajs-atl-token" />
+            <meta content="VANILLA" name="ajs-confluence-flavour" />
+            <meta content="" name="ajs-quick.comment.resources" />
+    
+    <link href="/favicon.ico" rel="shortcut icon" />
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+
+<link title="Confluence" href="/opensearch/osd.action" type="application/opensearchdescription+xml" rel="search" />
+
+        <!-- include system javascript resources -->
+                        
+    
+    <!--[if lt IE 9]>
+<script type="text/javascript" src="/s/en_GB/3289/1/3/_/download/superbatch/js/batch.js?conditionalComment=lt+IE+9" ></script>
+<![endif]-->
+<script src="/s/en_GB/3289/1/3/_/download/superbatch/js/batch.js" type="text/javascript"></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" src="/s/en_GB/3289/1/3/_/download/superbatch/js/batch.js?conditionalComment=lte+IE+8" ></script>
+<![endif]-->
+<script src="/s/en_GB/3289/1/f93343323d495c91fff71b09cb90d4c5/_/download/contextbatch/js/editor,macro-browser/batch.js" type="text/javascript"></script>
+<script src="/s/en_GB/3289/1/e9f46883ce5cc7eebdca3bb0b56785f1/_/download/contextbatch/js/page/batch.js" type="text/javascript"></script>
+<script src="/s/en_GB/3289/1/37002f8e5ee46cfb2f7110f9d79cc505/_/download/contextbatch/js/main/batch.js" type="text/javascript"></script>
+
+    
+    <!-- end system javascript resources -->
+
+    
+
+    
+</head>
+
+<body class="theme-documentation contenteditor create" id="com-atlassian-confluence" onload="placeFocus()">
+
+        
+    <div id="full-height-container">
+    <div id="header-precursor">
+        
+                </div>
+
+<div class="sectionbottom " id="header">
+        <form action="/dosearchsite.action" method="get" class="quick-search" id="quick-search">
+                <fieldset>
+            <input type="hidden" value="false" name="spaceSearch" />
+        </fieldset>
+        <fieldset>
+            <legend>Quick Search</legend>
+            <input type="text" size="25" name="queryString" autocomplete="off" accesskey="search-pages-action.accesskey" id="quick-search-query" class="quick-search-query placeholded" title=" ( Type '/' )" />
+            <input type="submit" value="Search Confluence" id="quick-search-submit" class="quick-search-submit" />
+            <div class="aui-dd-parent quick-nav-drop-down"><!-- Quick nav appears here --></div>
+        </fieldset>
+        <fieldset class="hidden parameters">
+            <input type="hidden" value="true" id="quickNavEnabled" />
+                    </fieldset>
+    </form>
+
+    <ul class="ajs-menu-bar" id="header-menu-bar">
+                    
+        
+            <li class="normal ajs-menu-item">
+        <a href="#" class="browse trigger ajs-menu-title" id="browse-menu-link"><span><span>Browse</span></span></a>         <div hidden="" class="ajs-drop-down assistive" style="">
+                        <ul class="section-leading first" id="browse-menu-link-leading">
+                                        <li>
+    
+        
+    
+    <a title="Browse pages in the Demonstration Space space ( Type 'g' then 's' )" class="" href="/pages/listpages.action?key=ds" id="space-pages-link">
+                   <span>Pages</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a title="Browse blogs in the Demonstration Space space" class="" href="/pages/viewrecentblogposts.action?key=ds" id="space-blogposts-link">
+                   <span>Blog</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a title="Browse labels in the Demonstration Space space" class="" href="/labels/listlabels-heatmap.action?key=ds" id="space-labels-link">
+                   <span>Labels</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a title="Browse attachments in the Demonstration Space space" class="" href="/spaces/listattachmentsforspace.action?key=ds" id="space-attachments-link">
+                   <span>Attachments</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a title="Browse mail in the Demonstration Space space" class="" href="/mail/archive/viewmailarchive.action?key=ds" id="space-mail-link">
+                   <span>Mail</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a title="Browse additional space functions in the Demonstration Space space" class="" href="/spaces/viewspacesummary.action?key=ds" id="space-advanced-link">
+                   <span>Advanced</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a title="Administer the Demonstration Space space" class="" href="/spaces/editspace.action?key=ds" id="space-admin-link">
+                   <span>Space Admin</span></a>        </li>
+                            </ul>
+                        <ul class="section-global" id="browse-menu-link-global">
+                                        <li>
+    
+        
+    
+    <a title="" class="" href="http://docs.atlassian.com/confluence/docs-42/whatsnew/iframe" id="whats-new-menu-link">
+                   <span>What’s New</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a title="Browse the Confluence people directory" class="" href="/peopledirectory.action" id="people-directory-link">
+                   <span>People Directory</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a title="Browse the Confluence space directory" class="" href="/spacedirectory/view.action" id="space-directory-link">
+                   <span>Space Directory</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a title="Create your custom RSS feed." class="" href="/dashboard/configurerssfeed.action" id="feed-builder-link">
+                   <span>Feed Builder</span></a>        </li>
+                                        <li>
+    
+            
+    
+    <a title="View available keyboard shortcuts ( Type '?' )" class="" href="#" id="keyboard-shortcuts-link">
+                   <span>Keyboard Shortcuts</span></a>        </li>
+                                        <li>
+    
+            
+    
+    <a title="Browse gadgets provided by Confluence" class="user-item administration-link" href="#" id="gadget-directory-link">
+                   <span>Confluence Gadgets</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a title="Manage and maintain Confluence" class="user-item administration-link" href="/admin/console.action" id="administration-link">
+                   <span>Confluence Admin</span></a>        </li>
+                            </ul>
+                    </div>
+    </li>
+        
+                                                                
+            <li class="normal ajs-menu-item">
+        <a href="#" class="user trigger ajs-menu-title" id="user-menu-link"><span><span>admin</span></span></a>         <div hidden="" class="ajs-drop-down assistive" style="">
+                        <ul class="section-user-status first" id="user-menu-link-user-status">
+                                        <li>
+        
+        
+    
+    <a title="Update your status" class="user-item update-user-status" href="/display/%7Eadmin" id="set-user-status-link">
+                   <span>Update Status…</span></a>        </li>
+                            </ul>
+                        <ul class="section-user-preferences" id="user-menu-link-user-preferences">
+                                        <li>
+    
+        
+    
+    <a title="" class="user-item personal-space" href="/spaces/createpersonalspace.action" id="create-personal-space-link">
+                   <span>Add Personal Space…</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a title="" class="user-item user-history popup-link" href="/users/viewuserhistory.action" id="view-user-history-link">
+                   <span>Recently Viewed</span></a>        </li>
+                            </ul>
+                        <ul class="section-user-content" id="user-menu-link-user-content">
+                                        <li>
+    
+        
+    
+    <a title="" class="user-item user-profile" href="/users/viewmyprofile.action" id="view-user-profile-link">
+                   <span>Profile</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a title="" class="follow-link" href="/users/viewfollow.action?username=admin">
+                   <span>Network</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a title="" class="user-item list-user-status" href="/display/status/admin/list">
+                   <span>Status Updates</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a title="" class="user-item" href="/users/viewmyfavourites.action" id="user-favourites-link">
+                   <span>Favourites</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a title="" class="user-item" href="/users/viewnotifications.action" id="user-watches-link">
+                   <span>Watches</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a title="" class="user-item" href="/users/viewmydrafts.action" id="user-drafts-link">
+                   <span>Drafts</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a title="" class="user-item" href="/users/viewmysettings.action" id="user-settings-link">
+                   <span>Settings</span></a>        </li>
+                            </ul>
+                        <ul class="section-user-operations" id="user-menu-link-user-operations">
+                                        <li>
+    
+        
+    
+    <a title="" class="user-item logout-link" href="/logout.action" id="logout-link">
+                   <span>Log Out</span></a>        </li>
+                            </ul>
+                    </div>
+    </li>
+                        <li class="normal ajs-menu-item" style="">
+            <div title="Show or hide sidebar ( Type '[' )" class="hidden" id="splitter-button"></div>
+        </li>
+
+    </ul>
+    
+    
+    <ol id="breadcrumbs">
+                    
+                        
+        <li class="first">
+                                    <span><a title="Go to Dashboard ( Type 'g' then 'd' )" href="/dashboard.action">Dashboard</a></span>
+                </li>
+                    
+                
+        <li>
+                                    <span><a href="/display/ds">Demonstration Space</a></span>
+                </li>
+        </ol>
+
+</div>
+
+
+<div id="main" class="active-richtext">
+    <div id="main-header">
+        
+        
+        
+        <h1 class="pagetitle" id="title-heading">
+                            <a href="/display/ds"><img alt="" src="/download/attachments/98349/ds?version=1&amp;modificationDate=1342425529652" class="logo space custom" /></a>                
+            <span id="title-text"></span>
+        </h1>
+    </div>
+
+    
+
+    
+    
+    
+    
+    
+
+    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+
+
+
+
+        
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+    
+                    
+    
+
+
+
+<div class="page edit" id="content">
+    
+
+<div id="action-messages">
+                        </div>
+
+
+    
+<script title="movePageDialog" type="text/x-template">
+    &lt;div class="row information"&gt;
+        &lt;div class="inner"&gt;
+            &lt;div class="element"&gt;
+                Specify the new parent page for this page and its children by space and title.
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form"&gt;
+        &lt;fieldset&gt;
+                
+
+    &lt;legend class="assistive"&gt;&lt;span&gt;Change the Parent Page to a Known Page&lt;/span&gt;&lt;/legend&gt;
+            &lt;div class="row"&gt;
+                &lt;label for="new-space"&gt;New space:&lt;/label&gt;
+                &lt;div class="value new-space-value"&gt;
+                    &lt;input id="new-space-key" name="new-space-key" type="hidden" value="ds"&gt;
+                                            &lt;span class="space-input"&gt;
+                            &lt;input id="new-space" name="new-space" value="Demonstration Space"&gt;
+                        &lt;/span&gt;
+                        &lt;span class="description hidden"&gt;Start typing a space name to see a list of suggestions.&lt;/span&gt;
+                                        &lt;div class="new-space-dropdown aui-dd-parent autocomplete"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row"&gt;
+                &lt;label for="new-parent-page"&gt;New parent page:&lt;/label&gt;
+                &lt;div class="value new-parent-page-value"&gt;
+                    &lt;span class="page-input"&gt;
+                        &lt;input id="new-parent-page" name="new-parent-page" value=""&gt;
+                    &lt;/span&gt;
+                    &lt;span class="description"&gt;Start typing a page title to see a list of suggestions.&lt;/span&gt;
+                    &lt;div class="new-parent-page-dropdown aui-dd-parent autocomplete"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/fieldset&gt;
+    &lt;/div&gt;
+    &lt;div class="location-info"&gt;
+        &lt;div class="row"&gt;
+            &lt;label&gt;Current location:&lt;/label&gt;
+            &lt;div class="value breadcrumbs-container"&gt;
+                &lt;div class="breadcrumbs-line"&gt;
+                    &lt;ul id="current-parent-breadcrumbs" class="breadcrumbs"&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;label&gt;New location:&lt;/label&gt;
+            &lt;div class="value breadcrumbs-container"&gt;
+                &lt;div class="breadcrumbs-line"&gt;
+                    &lt;ul id="new-parent-breadcrumbs" class="breadcrumbs"&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</script>
+
+<script title="movePageSearchPanel" type="text/x-template">
+    &lt;div class="row information"&gt;
+        &lt;div class="inner"&gt;
+            &lt;div class="element"&gt;
+                Search for and select the new parent page for this page and its children.
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id="move-page-search-container" class="row"&gt;
+        &lt;div class="search-form"&gt;
+            &lt;fieldset&gt;
+                    
+
+    &lt;legend class="assistive"&gt;&lt;span&gt;Search for a New Parent Page&lt;/span&gt;&lt;/legend&gt;
+                    
+
+    &lt;label  for="move-page-search-query" class="assistive"&gt;Search keywords&lt;/label&gt;
+                &lt;input class="search-query" id="move-page-search-query"&gt;
+                    
+
+    &lt;label  for="move-page-search-space" class="assistive"&gt;Search in space&lt;/label&gt;
+                                    &lt;select id="move-page-search-space" class="search-space"&gt;
+                        &lt;option value="conf_all" selected="selected"&gt;All Spaces&lt;/option&gt;
+                        &lt;option value="ds"&gt;Demonstration Space&lt;/option&gt;
+                    &lt;/select&gt;
+                                &lt;input type="button" value="Search"&gt;
+                            &lt;/fieldset&gt;
+        &lt;/div&gt;
+        &lt;div class="search-results"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</script>
+<script title="searchResultsGrid" type="text/x-template">
+    &lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr class="header"&gt;
+                &lt;th class="search-result-title"&gt;Page Title&lt;/th&gt;
+                &lt;th class="search-result-space"&gt;Space&lt;/th&gt;
+                &lt;th class="search-result-date"&gt;Updated&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+    &lt;/table&gt;
+</script>
+<script title="searchResultsGridCount" type="text/x-template">
+    &lt;p class="search-result-count"&gt;{0}&lt;/p&gt;
+</script>
+<script title="searchResultsGridRow" type="text/x-template">
+    &lt;tr class="search-result"&gt;
+        &lt;th class="search-result-title"&gt;&lt;a href="{1}" class="content-type-{2}"&gt;&lt;span&gt;{0}&lt;/span&gt;&lt;/a&gt;&lt;/th&gt;
+        &lt;td class="search-result-space"&gt;&lt;a class="space" href="/display/{4}/" title="{3}"&gt;{3}&lt;/a&gt;&lt;/td&gt;
+        &lt;td class="search-result-date"&gt;&lt;span class="date" title="{6}"&gt;{5}&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+</script><!-- Start restrictions section -->
+<script title="page-permissions-div" type="text/x-template">
+&lt;div id="page-permissions-div"&gt;
+    &lt;div id="page-permissions-editor-form"&gt;
+
+                &lt;div id="page-permissions-error-div" class="hidden"&gt;
+            &lt;a href="#" id="permissions-error-div-close"&gt;Ok&lt;/a&gt;
+            &lt;div&gt;&lt;/div&gt;
+        &lt;/div&gt;
+
+                &lt;div id="page-permissions-type-radios" class="page-permissions-label-rows"&gt;
+            &lt;div&gt;
+                &lt;input id="restrictViewRadio" type="radio" checked="checked" name="pagePermissionTypeRadio" value="view"/&gt;
+                &lt;label for="restrictViewRadio"&gt;Restrict viewing of this page&lt;/label&gt;
+                &lt;input id="restrictEditRadio" type="radio" name="pagePermissionTypeRadio" value="edit"/&gt;
+                &lt;label for="restrictEditRadio"&gt;Restrict editing of this page&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id="page-permissions-input" class="page-permissions-label-rows"&gt;
+            &lt;div class="page-permissions-label"&gt;To:&lt;/div&gt;
+            &lt;div id="page-permissions-chooser-box"&gt;
+                                    &lt;span id="page-permissions-choose-me" class="ajs-button normal"&gt;
+                        &lt;img class="permission-entity-picture" src="/images/icons/profilepics/default.gif" border="0" alt="Me" align="absmiddle"/&gt;
+                        &lt;a href="#"&gt;Me&lt;/a&gt;
+                        &lt;span class="remote-user-name hidden"&gt;admin&lt;/span&gt;
+                    &lt;/span&gt;
+                                &lt;span id="page-permissions-choose-user" class="ajs-button"&gt;
+                    
+
+
+
+    
+
+
+
+&lt;a href="#" id='userpicker-popup-link-image' onClick="var picker = window.open('/spaces/openuserpicker.action?key=ds&amp;amp;startIndex=0&amp;amp;onPopupSubmit=AJS.PagePermissions.addUserPermissions', 'EntitiesPicker', 'status=yes,resizable=yes,top=100,left=200,width=700,height=680,scrollbars=yes'); picker.focus(); return false;"&gt;&lt;img src="/s/en_GB/3289/1/_/images/icons/user_16.gif" height=16 width=16 border=0 align="absmiddle"  title="Choose users" /&gt;&lt;/a&gt;
+&lt;a href="#" id='userpicker-popup-link-text' onClick="var picker = window.open('/spaces/openuserpicker.action?key=ds&amp;amp;startIndex=0&amp;amp;onPopupSubmit=AJS.PagePermissions.addUserPermissions', 'EntitiesPicker', 'status=yes,resizable=yes,top=100,left=200,width=700,height=680,scrollbars=yes'); picker.focus(); return false;"&gt;Person...&lt;/a&gt;
+
+
+                &lt;/span&gt;
+                &lt;span id="page-permissions-choose-group" class="ajs-button"&gt;
+                    
+
+
+
+    
+
+ 
+
+&lt;a href="#" id='grouppicker-popup-link-image' onClick="var picker = window.open('/spaces/opengrouppicker.action?key=ds&amp;amp;startIndex=0&amp;amp;actionName=dosearchgroups.action&amp;amp;onPopupSubmit=AJS.PagePermissions.addGroupPermissions', 'EntitiesPicker', 'status=yes,resizable=yes,top=100,left=200,width=580,height=550,scrollbars=yes'); picker.focus(); return false;"&gt;&lt;img src="/s/en_GB/3289/1/_/images/icons/group_16.gif" height=16 width=16 border=0 align="absmiddle"  title="Choose groups" /&gt;&lt;/a&gt;
+&lt;a href="#" id='grouppicker-popup-link-text' onClick="var picker = window.open('/spaces/opengrouppicker.action?key=ds&amp;amp;startIndex=0&amp;amp;actionName=dosearchgroups.action&amp;amp;onPopupSubmit=AJS.PagePermissions.addGroupPermissions', 'EntitiesPicker', 'status=yes,resizable=yes,top=100,left=200,width=580,height=550,scrollbars=yes'); picker.focus(); return false;"&gt;Group...&lt;/a&gt;
+
+
+                &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div id="page-permissions-input-box"&gt;
+                &lt;input type="text" id="page-permissions-names-input" name="permissionNames"
+                    placeholder="Enter user or group name" class="autocomplete-user"
+                    data-max="10" data-none-message="No matches"
+                    data-target="#page-permissions-names-hidden" data-template="{username}"
+                    data-dropdown-target="#page-perms-name-dropdown-wrapper" data-resize-to-input="true"
+                    size="30"/&gt;
+                &lt;input
+    type="hidden"
+                            id="page-permissions-names-hidden"           /&gt;                &lt;img height="16px" width="1px" src="/s/en_GB/3289/1/_/images/border/spacer.gif"/&gt;
+                &lt;input type="button" id="add-typed-names" value="Restrict"&gt;
+                &lt;div id="page-perms-name-dropdown-wrapper" class="aui-dd-parent autocomplete"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id="page-permissions-tables"&gt;
+        &lt;div id="page-permissions-table-div"&gt;
+                        &lt;table id="page-permissions-table" class="page-permissions-table"&gt;
+                &lt;tr id="page-permissions-no-views" class="marker-row"&gt;
+                    &lt;td colspan="3" class="page-permissions-marker-cell"&gt;&lt;span&gt;No view restrictions are defined for this page&lt;/span&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr id="page-permissions-no-edits" class="marker-row"&gt;
+                    &lt;td colspan="3" class="page-permissions-marker-cell"&gt;&lt;span&gt;No edit restrictions are defined for this page&lt;/span&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div id="page-inherited-permissions-table-div" class="hidden"&gt;
+            &lt;span id="page-inherited-permissions-table-desc"&gt;
+                &lt;a class="icon twisty-closed"&gt;Show/Hide&lt;/a&gt;
+                &lt;a id="toggle-inherited-permissions" title="Click to see inherited restrictions"&gt;This page has restricted parent pages. It can only be seen by users who can see those parent pages.&lt;/a&gt;
+            &lt;/span&gt;
+            &lt;div id="page-inherited-permissions-tables" class="hidden page-inheritance-togglable"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</script>
+
+<!-- End restrictions section -->
+
+        
+    
+                            
+            
+
+
+
+                                
+                    
+    
+
+
+<form class="editor" action="docreatepage.action" method="post" name="createpageform" id="createpageform">
+    
+
+        <input type="hidden" value="fccf1b10488670bd5552836152da631e52e199b0" name="atl_token" />
+
+            <input type="hidden" value="0" name="fromPageId" />    <input type="hidden" value="ds" name="spaceKey" />    <input type="hidden" id="createPageLabelsString" value="" name="labelsString" />
+        <input type="hidden" id="titleWritten" value="false" name="titleWritten" />
+        <input type="hidden" value="false" name="linkCreation" />        
+        <div id="editor-precursor" style="display: table-row;">
+            <div class="cell">
+        
+            <div id="content-title-div">
+                
+
+<div class="field-group
+        ">
+    <label for="content-title" id="content-title-label">
+
+</label>
+            <input type="text" placeholder="New Page" autocomplete="off" class="text   pagetitle" tabindex="1" id="content-title" name="title" />
+                      
+</div>            </div>
+
+            <div id="editor-messages">
+                
+                                
+<div class="hidden" id="heartbeat-div">
+    <div class="aui-message warning closeable">
+        <span class="svg-icon warning size-18"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="19" height="19"><desc>Created with Raphaël</desc><defs><linearGradient id="r-55916cea688042aa8effae0448eb13f6" x1="0" y1="1" x2="6.123233995736766e-17" y2="0"><stop offset="0%" stop-color="#ff9900"/><stop offset="33.333333333333336%" stop-color="#ffa209"/><stop offset="66.66666666666667%" stop-color="#ffba21"/><stop offset="100%" stop-color="#ffcc33"/></linearGradient><linearGradient id="r-25724c1a2d914febb29675024908aa75" x1="1.8369701987210297e-16" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff9900"/><stop offset="33.333333333333336%" stop-color="#ffa209"/><stop offset="66.66666666666667%" stop-color="#ffba21"/><stop offset="100%" stop-color="#ffcc33"/></linearGradient></defs><path fill="#ff9900" stroke="none" d="M6.446250000000001,3.2760000000000007C7.851000000000001,0.8422500000000008,10.149750000000001,0.8422500000000008,11.5545,3.2760000000000007C12.95925,5.7097500000000005,15.258000000000001,9.691500000000001,16.6635,12.124500000000001C18.069,14.557500000000001,16.919999999999998,16.548000000000002,14.109749999999998,16.548000000000002C11.300249999999998,16.548000000000002,6.702749999999998,16.548000000000002,3.8917499999999983,16.548000000000002C1.0822499999999984,16.548000000000002,-0.06675000000000164,14.557500000000001,1.3379999999999983,12.124500000000001C2.741999999999998,9.691500000000001,5.040749999999998,5.7097500000000005,6.446249999999998,3.2760000000000016Z" transform="  "/><path fill="url(#r-55916cea688042aa8effae0448eb13f6)" stroke="none" d="M7.095749999999998,3.6510000000000007L1.986749999999998,12.499500000000001C1.446749999999998,13.434000000000001,1.339499999999998,14.277750000000001,1.683749999999998,14.874S2.811749999999998,15.798,3.8909999999999982,15.798H14.108999999999998C15.188249999999998,15.798,15.972749999999998,15.4695,16.317,14.874S16.55325,13.434000000000001,16.01325,12.499500000000001L10.90425,3.6510000000000016C10.364999999999998,2.7165000000000017,9.6885,2.2012500000000017,9,2.2012500000000017S7.63575,2.7157500000000017,7.09575,3.6510000000000016Z" opacity="1" fill-opacity="1" style="opacity: 1; fill-opacity: 1;" transform="  "/><path fill="url(#r-25724c1a2d914febb29675024908aa75)" stroke="none" d="M6.955499999999999,4.64025C6.955499999999999,4.64025,7.681499999999999,11.90025,7.6949999999999985,12.03675C7.2959999999999985,12.393749999999999,7.034249999999998,12.89775,7.034249999999998,13.473749999999999C7.034249999999998,14.548499999999999,7.907999999999999,15.422249999999998,8.982,15.422249999999998C10.05675,15.422249999999998,10.930499999999999,14.548499999999999,10.930499999999999,13.473749999999999C10.930499999999999,12.896249999999998,10.66725,12.392999999999999,10.268249999999998,12.03525C10.281749999999999,11.89725,11.009249999999998,4.64025,11.009249999999998,4.64025H6.955499999999998Z" opacity="1" fill-opacity="1" style="opacity: 1; fill-opacity: 1;" transform="  "/><path fill="#ffffff" stroke="none" d="M8.382750000000003,11.378250000000001L7.784250000000004,5.390250000000002H10.179750000000004L9.579750000000004,11.378250000000001H8.382750000000005ZM8.982000000000003,12.276000000000002C8.320500000000003,12.276000000000002,7.784250000000003,12.813000000000002,7.784250000000003,13.473750000000003C7.784250000000003,14.136000000000003,8.320500000000003,14.672250000000002,8.982000000000003,14.672250000000002C9.642750000000003,14.672250000000002,10.180500000000002,14.136000000000001,10.180500000000002,13.473750000000003C10.179750000000002,12.813000000000002,9.642000000000003,12.276000000000003,8.982000000000003,12.276000000000003Z" transform="  "/></svg></span>
+        This page is being edited by <span id="other-users-span"></span>.
+    <span class="aui-icon icon-close"></span></div>
+</div>
+
+
+            </div>
+            <div id="all-messages">
+                
+<div id="action-messages">
+                        </div>
+            </div>
+                </div>
+        </div>
+    
+                        
+
+<script title="editor-css" type="text/x-template">
+    &lt;link type="text/css" rel="stylesheet" href="/s/en_GB/3289/1/1.0/_/download/batch/confluence.web.resources:content-styles/confluence.web.resources:content-styles.css" media="all"&gt;
+&lt;link type="text/css" rel="stylesheet" href="/s/en_GB/3289/1/1.0/_/download/batch/confluence.web.resources:content-styles/confluence.web.resources:content-styles.css?media=print" media="print"&gt;
+&lt;link type="text/css" rel="stylesheet" href="/s/en_GB/3289/1/1.13/_/download/batch/com.atlassian.confluence.plugins.status-macro:editor_content_status/com.atlassian.confluence.plugins.status-macro:editor_content_status.css" media="all"&gt;
+&lt;link type="text/css" rel="stylesheet" href="/s/en_GB/3289/1/4.2.8/_/download/batch/com.atlassian.confluence.tinymceplugin:editor-content-styles/com.atlassian.confluence.tinymceplugin:editor-content-styles.css" media="all"&gt;
+&lt;link type="text/css" rel="stylesheet" href="/s/en_GB/3289/1/24/_/styles/colors.css?spaceKey=ds" media="all"&gt;
+&lt;link type="text/css" rel="stylesheet" href="/s/en_GB/3289/1/4.2.8/_/download/resources/com.atlassian.confluence.plugins.doctheme:documentation/default-theme.css" media="all"&gt;
+&lt;link type="text/css" rel="stylesheet" href="/s/en_GB/3289/1/4.2.8/_/download/resources/com.atlassian.confluence.plugins.doctheme:documentation/splitter.css" media="all"&gt;
+
+</script>
+
+    
+
+
+
+
+        
+
+
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+        <div id="toolbar">
+
+        <div class="aui-toolbar" id="rte-toolbar">
+
+            <div class="toolbar-split toolbar-split-left">
+                <ul class="toolbar-group">
+                                        <li class="toolbar-item toolbar-dropdown dd-allocated" id="format-dropdown">
+                        <div class="aui-dd-parent">
+                            <a data-control-id="formatselect" class="toolbar-trigger aui-dd-trigger" href="#" id="format-dropdown-display">
+                                <span class="dropdown-text">
+        Paragraph
+    </span>
+                                    <span class="icon icon-dropdown "></span>
+                            </a>
+                            <ul class="aui-dropdown hidden">
+                                    <li data-format="p" class="dropdown-item format-p">
+        <a title="Paragraph (⌘0)" href="#" class="item-link">Paragraph</a>
+    </li>
+                                    <li data-format="h1" class="dropdown-item format-h1">
+        <a title="Heading 1 (⌘1)" href="#" class="item-link">Heading 1</a>
+    </li>
+                                    <li data-format="h2" class="dropdown-item format-h2">
+        <a title="Heading 2 (⌘2)" href="#" class="item-link">Heading 2</a>
+    </li>
+                                    <li data-format="h3" class="dropdown-item format-h3">
+        <a title="Heading 3 (⌘3)" href="#" class="item-link">Heading 3</a>
+    </li>
+                                    <li data-format="h4" class="dropdown-item format-h4">
+        <a title="Heading 4 (⌘4)" href="#" class="item-link">Heading 4</a>
+    </li>
+                                    <li data-format="h5" class="dropdown-item format-h5">
+        <a title="Heading 5 (⌘5)" href="#" class="item-link">Heading 5</a>
+    </li>
+                                    <li data-format="h6" class="dropdown-item format-h6">
+        <a title="Heading 6 (⌘6)" href="#" class="item-link">Heading 6</a>
+    </li>
+                                    <li data-format="pre" class="dropdown-item format-pre">
+        <a title="Preformatted (⌘7)" href="#" class="item-link">Preformatted</a>
+    </li>
+                                    <li data-format="blockquote" class="dropdown-item format-blockquote">
+        <a title="Quote (⌘8)" href="#" class="item-link">Quote</a>
+    </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="toolbar-group">
+                    
+                <li id="rte-button-bold" class="toolbar-item">
+        <a data-control-id="bold" title="Bold (⌘B)" href="#" class="toolbar-trigger">
+                <span class="icon icon-bold ">Bold</span>
+        </a>
+    </li>
+                    
+                <li id="rte-button-italic" class="toolbar-item">
+        <a data-control-id="italic" title="Italic (⌘I)" href="#" class="toolbar-trigger">
+                <span class="icon icon-italic ">Italic</span>
+        </a>
+    </li>
+                    
+                <li id="rte-button-underline" class="toolbar-item">
+        <a data-control-id="underline" title="Underline (⌘U)" href="#" class="toolbar-trigger">
+                <span class="icon icon-underline ">Underline</span>
+        </a>
+    </li>
+                    <li id="color-picker-control" class="toolbar-item toolbar-splitbutton">
+                        <a data-color="003366" title="Colour" id="rte-button-color" href="#" class="toolbar-trigger">
+                            <span class="selected-color" style="background-color: rgb(0, 51, 102);"></span>
+                        </a>
+                        <div class="aui-dd-parent dd-allocated">
+                            <a title="More colours" data-control-id="colorSelector" id="rte-button-color-selector" href="#" class="toolbar-trigger aui-dd-trigger">
+                                    <span class="icon icon-dropdown ">More colours</span>
+                            </a>
+                            <div class="color-picker-container">
+                                <div class="color-picker aui-dropdown hidden">
+                                    <ul>
+            <li><a data-color="000000" style="background-color: #000000" href="#"> </a></li>
+            <li><a data-color="993300" style="background-color: #993300" href="#"> </a></li>
+            <li><a data-color="333300" style="background-color: #333300" href="#"> </a></li>
+            <li><a data-color="003300" style="background-color: #003300" href="#"> </a></li>
+            <li><a data-color="003366" style="background-color: #003366" href="#"> </a></li>
+            <li><a data-color="000080" style="background-color: #000080" href="#"> </a></li>
+            <li><a data-color="333399" style="background-color: #333399" href="#"> </a></li>
+            <li><a data-color="333333" style="background-color: #333333" href="#"> </a></li>
+            <li><a data-color="800000" style="background-color: #800000" href="#"> </a></li>
+            <li><a data-color="FF6600" style="background-color: #FF6600" href="#"> </a></li>
+            <li><a data-color="808000" style="background-color: #808000" href="#"> </a></li>
+            <li><a data-color="008000" style="background-color: #008000" href="#"> </a></li>
+            <li><a data-color="008080" style="background-color: #008080" href="#"> </a></li>
+            <li><a data-color="0000FF" style="background-color: #0000FF" href="#"> </a></li>
+            <li><a data-color="666699" style="background-color: #666699" href="#"> </a></li>
+            <li><a data-color="808080" style="background-color: #808080" href="#"> </a></li>
+            <li><a data-color="FF0000" style="background-color: #FF0000" href="#"> </a></li>
+            <li><a data-color="FF9900" style="background-color: #FF9900" href="#"> </a></li>
+            <li><a data-color="99CC00" style="background-color: #99CC00" href="#"> </a></li>
+            <li><a data-color="339966" style="background-color: #339966" href="#"> </a></li>
+            <li><a data-color="33CCCC" style="background-color: #33CCCC" href="#"> </a></li>
+            <li><a data-color="3366FF" style="background-color: #3366FF" href="#"> </a></li>
+            <li><a data-color="800080" style="background-color: #800080" href="#"> </a></li>
+            <li><a data-color="999999" style="background-color: #999999" href="#"> </a></li>
+            <li><a data-color="FF00FF" style="background-color: #FF00FF" href="#"> </a></li>
+            <li><a data-color="FFCC00" style="background-color: #FFCC00" href="#"> </a></li>
+            <li><a data-color="FFFF00" style="background-color: #FFFF00" href="#"> </a></li>
+            <li><a data-color="00FF00" style="background-color: #00FF00" href="#"> </a></li>
+            <li><a data-color="00FFFF" style="background-color: #00FFFF" href="#"> </a></li>
+            <li><a data-color="00CCFF" style="background-color: #00CCFF" href="#"> </a></li>
+            <li><a data-color="993366" style="background-color: #993366" href="#"> </a></li>
+            <li><a data-color="C0C0C0" style="background-color: #C0C0C0" href="#"> </a></li>
+            <li><a data-color="FF99CC" style="background-color: #FF99CC" href="#"> </a></li>
+            <li><a data-color="FFCC99" style="background-color: #FFCC99" href="#"> </a></li>
+            <li><a data-color="FFFF99" style="background-color: #FFFF99" href="#"> </a></li>
+            <li><a data-color="CCFFCC" style="background-color: #CCFFCC" href="#"> </a></li>
+            <li><a data-color="CCFFFF" style="background-color: #CCFFFF" href="#"> </a></li>
+            <li><a data-color="99CCFF" style="background-color: #99CCFF" href="#"> </a></li>
+            <li><a data-color="CC99FF" style="background-color: #CC99FF" href="#"> </a></li>
+            <li><a data-color="FFFFFF" style="background-color: #FFFFFF" href="#"> </a></li>
+    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="more-menu" class="toolbar-item toolbar-dropdown">
+                        <div class="aui-dd-parent dd-allocated">
+                            <a title="More" id="rte-button-more" class="toolbar-trigger aui-dd-trigger" href="#">
+                                    <span class="icon icon-more "></span>
+                                    <span class="icon icon-dropdown "></span>
+                            </a>
+                            <div class="aui-dropdown grouped hidden">
+                                <div class="grouped-dropdown-item">
+                                    <ul>
+                                                            <li data-control-id="strikethrough" class="dropdown-item more-menu-trigger">
+        <a href="#" title="Strikethrough (⌘⇧S)" class="item-link" id="rte-strikethrough">
+                <span class="icon icon-check hidden"></span>
+Strikethrough
+        </a>
+    </li>
+                                                        <li data-control-id="sub" class="dropdown-item more-menu-trigger">
+        <a href="#" title="Subscript" class="item-link" id="rte-sub">
+                <span class="icon icon-check hidden"></span>
+Subscript
+        </a>
+    </li>
+                                                        <li data-control-id="sup" class="dropdown-item more-menu-trigger">
+        <a href="#" title="Superscript" class="item-link" id="rte-sup">
+                <span class="icon icon-check hidden"></span>
+Superscript
+        </a>
+    </li>
+                                                    <li data-control-id="monospace" class="dropdown-item more-menu-trigger">
+        <a href="#" title="Format text with monospaced font" class="item-link" id="rte-monospace">
+                <span class="icon icon-check hidden"></span>
+Monospace
+        </a>
+    </li>
+
+                                                                                                                    </ul>
+                                </div>
+                                <div class="grouped-dropdown-item">
+                                    <ul>
+                                            <li data-format="removeformat" class="dropdown-item more-menu-trigger no-icon">
+        <a href="#" title="Clears formatting on currently selected text" class="item-link" id="rte-removeformat">
+            Clear Formatting
+        </a>
+    </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+
+                <ul class="toolbar-group">
+                    
+                <li id="rte-button-bullist" class="toolbar-item">
+        <a data-control-id="bullist" title="Bullet list (⌘⇧B)" href="#" class="toolbar-trigger">
+                <span class="icon icon-bullist ">Bullet list</span>
+        </a>
+    </li>
+                    
+                <li id="rte-button-numlist" class="toolbar-item">
+        <a data-control-id="numlist" title="Numbered list (⌘⇧N)" href="#" class="toolbar-trigger">
+                <span class="icon icon-numlist ">Numbered list</span>
+        </a>
+    </li>
+                </ul>
+
+                <ul class="toolbar-group">
+                    
+                <li id="rte-button-outdent" class="toolbar-item disabled">
+        <a data-control-id="outdent" title="Outdent" href="#" class="toolbar-trigger">
+                <span class="icon icon-outdent ">Outdent</span>
+        </a>
+    </li>
+                    
+                <li id="rte-button-indent" class="toolbar-item">
+        <a data-control-id="indent" title="Indent" href="#" class="toolbar-trigger">
+                <span class="icon icon-indent ">Indent</span>
+        </a>
+    </li>
+                </ul>
+
+                <ul class="toolbar-group">
+                    
+                <li id="rte-button-justifyleft" class="toolbar-item">
+        <a data-control-id="justifyleft" title="Align left" href="#" class="toolbar-trigger">
+                <span class="icon icon-justifyleft ">Align left</span>
+        </a>
+    </li>
+                    
+                <li id="rte-button-justifycenter" class="toolbar-item">
+        <a data-control-id="justifycenter" title="Align center" href="#" class="toolbar-trigger">
+                <span class="icon icon-justifycenter ">Align center</span>
+        </a>
+    </li>
+                    
+                <li id="rte-button-justifyright" class="toolbar-item">
+        <a data-control-id="justifyright" title="Align right" href="#" class="toolbar-trigger">
+                <span class="icon icon-justifyright ">Align right</span>
+        </a>
+    </li>
+                </ul>
+
+                <ul class="toolbar-group">
+                    <li class="toolbar-item">
+                        <a title="Insert Link (⌘K)" data-control-id="linkbrowserButton" id="rte-button-link" href="#" class="toolbar-trigger">
+                                <span class="icon icon-link "></span>
+                            <span class="trigger-text">Link</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="toolbar-group">
+                    <li id="insert-table-dropdown" class="toolbar-item toolbar-dropdown">
+                        <div class="aui-dd-parent">
+                            <a title="Insert Table" id="rte-button-insert-table" class="toolbar-trigger aui-dd-trigger" href="#">
+                                    <span class="icon icon-table "></span>
+                                <span class="dropdown-text">Table</span>
+                                    <span class="icon icon-dropdown "></span>
+                            </a>
+
+                            <div class="hidden" id="table-picker-container" style="top: 24px;">
+                                <div title="Hold SHIFT for a table without a heading." class="table-picker-box">
+                                    <div class="table-picker-background">
+                                        <div class="picker picker-cell"></div>
+                                        <div class="picker picker-heading heading"></div>
+                                        <div class="picker picker-selected-cell"></div>
+                                        <div class="picker picker-selected-heading heading"></div>
+                                    </div>
+                                    <p class="desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    <div id="table-picker-backdrop" class="hidden"></div></li>
+                </ul>
+
+                <ul class="toolbar-group">
+                    <li id="insert-menu" class="toolbar-item toolbar-dropdown">
+                        <div class="aui-dd-parent dd-allocated">
+                            <a title="Insert" id="rte-button-insert" class="toolbar-trigger aui-dd-trigger" href="#">
+                                    <span class="icon icon-insert "></span>
+                                <span class="dropdown-text">Insert</span>
+                                    <span class="icon icon-dropdown "></span>
+                            </a>
+
+                            <div class="aui-dropdown grouped hidden">
+                                <div class="grouped-dropdown-item">
+                                    <span class="assistive">Insert Content</span>
+                                    <ul id="content-insert-list">
+                                        
+        
+        <li data-command="mceConfimage" class="dropdown-item content-image">
+        <a href="#" title="Insert Image (⌘M)" class="item-link" id="rte-insert-image">
+                <span class="icon "></span>
+ Image
+        </a>
+    </li>
+                                        
+        
+        <li data-control-id="linkbrowserButton" class="dropdown-item content-link">
+        <a href="#" title="Insert Link (⌘K)" class="item-link" id="rte-insert-link">
+                <span class="icon "></span>
+ Link
+        </a>
+    </li>
+                                        
+    
+        <li data-command="mceConfAttachments" class="dropdown-item content-attachment">
+        <a href="#" title="Insert Attachment" class="item-link" id="rte-insert-attachment">
+                <span class="icon "></span>
+ Attachment
+        </a>
+    </li>
+                                        
+    
+        <li data-command="confCharmap" class="dropdown-item content-symbol">
+        <a href="#" title="Insert Symbol" class="item-link" id="rte-insert-symbol">
+                <span class="icon "></span>
+ Symbol
+        </a>
+    </li>
+                                        
+    
+        <li data-command="mceEmotion" class="dropdown-item content-emoticon">
+        <a href="#" title="Insert Emoticon" class="item-link" id="rte-insert-emoticon">
+                <span class="icon "></span>
+ Emoticon
+        </a>
+    </li>
+                                        
+        
+        <li data-command="InsertWikiMarkup" class="dropdown-item content-wikimarkup">
+        <a href="#" title="Insert Wiki Markup (⌘⇧D)" class="item-link" id="rte-insert-wikimarkup">
+                <span class="icon "></span>
+ Wiki Markup
+        </a>
+    </li>
+                                        
+    
+        <li data-command="InsertHorizontalRule" class="dropdown-item content-hr">
+        <a href="#" title="Insert horizontal rule" class="item-link" id="rte-insert-hr">
+                <span class="icon "></span>
+ Horizontal rule
+        </a>
+    </li>
+                                    </ul>
+                                </div>
+                                <div class="grouped-dropdown-item">
+                                    <span class="assistive">tinymce.confluence.insert_menu.macro_desc</span>
+                                    <ul id="macro-insert-list">
+                                                                                                                                                                                <li data-macro-name="info" class="dropdown-item macro-info">
+        <a href="#" title="Insert 'Info' macro" class="item-link" id="info">
+                <span class="icon "></span>
+ Info
+        </a>
+    </li>
+                                                                                                <li data-macro-name="jiralink" class="dropdown-item macro-jiralink" style="display: none;">
+        <a href="#" title="Insert 'JIRA Issue' macro" class="item-link" id="jiralink">
+                <span class="icon "></span>
+ JIRA Issue
+        </a>
+    </li>
+                                                                                                <li data-macro-name="status" class="dropdown-item macro-status">
+        <a href="#" title="Insert 'Status' macro" class="item-link" id="status">
+                <span class="icon "></span>
+ Status
+        </a>
+    </li>
+                                                                                                <li data-macro-name="gallery" class="dropdown-item macro-gallery">
+        <a href="#" title="Insert 'Gallery' macro" class="item-link" id="gallery">
+                <span class="icon "></span>
+ Gallery
+        </a>
+    </li>
+                                                                                                <li data-macro-name="tasklist" class="dropdown-item macro-tasklist">
+        <a href="#" title="Insert 'Tasklist' macro" class="item-link" id="tasklist">
+                <span class="icon "></span>
+ Tasklist
+        </a>
+    </li>
+                                                                                                <li data-macro-name="toc" class="dropdown-item macro-toc">
+        <a href="#" title="Insert 'Table of Contents' macro" class="item-link" id="toc">
+                <span class="icon "></span>
+ Table of Contents
+        </a>
+    </li>
+                                                                                                                            
+        
+        <li data-command="mceConfMacroBrowser" class="dropdown-item content-macro">
+        <a href="#" title="Open the macro browser (⌘⇧A)" class="item-link" id="rte-insert-macro">
+                <span class="icon "></span>
+ Other Macros
+        </a>
+    </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                                <ul class="toolbar-group">
+                    <li class="toolbar-item toolbar-dropdown" id="pagelayout-menu">
+                        <div class="aui-dd-parent dd-allocated">
+                            <a title="Page Layout" id="rte-button-pagelayout" class="toolbar-trigger aui-dd-trigger" href="#">
+                                    <span class="icon icon-layout pagelayout-two-simple">Page Layout</span>
+                                    <span class="icon icon-dropdown "></span>
+                            </a>
+
+                            <ul class="aui-dropdown hidden">
+                                <li class="dropdown-item">
+    <a data-atlassian-layout="{&quot;name&quot;: &quot;pagelayout-none&quot;, &quot;columns&quot;: 0   }" title="No Layout" class="item-link" href="#">
+            <span class="icon icon-check"></span>
+            <span class="icon icon-layout pagelayout-none">No Layout</span>
+    </a>
+</li>
+                                <li class="dropdown-item">
+    <a data-atlassian-layout="{&quot;name&quot;: &quot;pagelayout-two-simple&quot;, &quot;columns&quot;: [&quot;&quot;, &quot;&quot;]   }" title="Two column (simple)" class="item-link" href="#">
+            <span class="icon icon-check hidden"></span>
+            <span class="icon icon-layout pagelayout-two-simple">Two column (simple)</span>
+    </a>
+</li>
+                                <li class="dropdown-item">
+    <a data-atlassian-layout="{&quot;name&quot;: &quot;pagelayout-two-simple-left&quot;, &quot;columns&quot;: [&quot;aside&quot;, &quot;large&quot;]   }" title="Two column (simple, left sidebar)" class="item-link" href="#">
+            <span class="icon icon-check hidden"></span>
+            <span class="icon icon-layout pagelayout-two-simple-left">Two column (simple, left sidebar)</span>
+    </a>
+</li>
+                                <li class="dropdown-item">
+    <a data-atlassian-layout="{&quot;name&quot;: &quot;pagelayout-two-simple-right&quot;, &quot;columns&quot;: [&quot;large&quot;, &quot;aside&quot;]   }" title="Two column (simple, right sidebar)" class="item-link" href="#">
+            <span class="icon icon-check hidden"></span>
+            <span class="icon icon-layout pagelayout-two-simple-right">Two column (simple, right sidebar)</span>
+    </a>
+</li>
+                                <li class="dropdown-item">
+    <a data-atlassian-layout="{&quot;name&quot;: &quot;pagelayout-three-simple&quot;, &quot;columns&quot;: [&quot;&quot;, &quot;&quot;, &quot;&quot;]   }" title="Three column (simple)" class="item-link" href="#">
+            <span class="icon icon-check hidden"></span>
+            <span class="icon icon-layout pagelayout-three-simple">Three column (simple)</span>
+    </a>
+</li>
+                                <li class="dropdown-item">
+    <a data-atlassian-layout="{&quot;name&quot;: &quot;pagelayout-two&quot;, &quot;columns&quot;: [&quot;&quot;, &quot;&quot;] , &quot;header&quot;: true  , &quot;footer&quot;:true  }" title="Two column" class="item-link" href="#">
+            <span class="icon icon-check hidden"></span>
+            <span class="icon icon-layout pagelayout-two">Two column</span>
+    </a>
+</li>
+                                <li class="dropdown-item">
+    <a data-atlassian-layout="{&quot;name&quot;: &quot;pagelayout-two-left&quot;, &quot;columns&quot;: [&quot;aside&quot;, &quot;large&quot;] , &quot;header&quot;: true  , &quot;footer&quot;:true  }" title="Two column (left sidebar)" class="item-link" href="#">
+            <span class="icon icon-check hidden"></span>
+            <span class="icon icon-layout pagelayout-two-left">Two column (left sidebar)</span>
+    </a>
+</li>
+                                <li class="dropdown-item">
+    <a data-atlassian-layout="{&quot;name&quot;: &quot;pagelayout-two-right&quot;, &quot;columns&quot;: [&quot;large&quot;, &quot;aside&quot;] , &quot;header&quot;: true  , &quot;footer&quot;:true  }" title="Two column (right sidebar)" class="item-link" href="#">
+            <span class="icon icon-check hidden"></span>
+            <span class="icon icon-layout pagelayout-two-right">Two column (right sidebar)</span>
+    </a>
+</li>
+                                <li class="dropdown-item">
+    <a data-atlassian-layout="{&quot;name&quot;: &quot;pagelayout-three&quot;, &quot;columns&quot;: [&quot;&quot;, &quot;&quot;, &quot;&quot;] , &quot;header&quot;: true  , &quot;footer&quot;:true  }" title="Three column" class="item-link" href="#">
+            <span class="icon icon-check hidden"></span>
+            <span class="icon icon-layout pagelayout-three">Three column</span>
+    </a>
+</li>
+                                <li class="dropdown-item">
+    <a data-atlassian-layout="{&quot;name&quot;: &quot;pagelayout-three-sidebars&quot;, &quot;columns&quot;: [&quot;sidebars&quot;, &quot;large&quot;, &quot;sidebars&quot;] , &quot;header&quot;: true  , &quot;footer&quot;:true  }" title="Three column (left and right sidebars)" class="item-link" href="#">
+            <span class="icon icon-check hidden"></span>
+            <span class="icon icon-layout pagelayout-three-sidebars">Three column (left and right sidebars)</span>
+    </a>
+</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                
+                <ul class="toolbar-group">
+                    
+                <li id="rte-button-undo" class="toolbar-item disabled">
+        <a data-control-id="undo" title="Undo (⌘Z)" href="#" class="toolbar-trigger">
+                <span class="icon icon-undo ">Undo</span>
+        </a>
+    </li>
+                    
+                <li id="rte-button-redo" class="toolbar-item disabled">
+        <a data-control-id="redo" title="Redo (⌘Y)" href="#" class="toolbar-trigger">
+                <span class="icon icon-redo ">Redo</span>
+        </a>
+    </li>
+                </ul>
+
+                
+            </div>            <div class="toolbar-split toolbar-split-right">
+                <ul class="toolbar-group">
+                        <li id="rte-button-searchreplace" class="toolbar-item">
+        <a data-control-id="searchreplace" title="Find/Replace" href="#" class="toolbar-trigger">
+                <span class="icon icon-searchreplace ">Find/Replace</span>
+        </a>
+    </li>
+                </ul>
+                <ul class="toolbar-group">
+                        <li id="rte-button-help" class="toolbar-item">
+        <a data-control-id="help" title="Help" href="#" class="toolbar-trigger">
+                <span class="icon icon-help ">Keyboard Shortcuts Help</span>
+        </a>
+    </li>
+                </ul>
+            </div>        </div>    </div>
+    <div id="wysiwyg" style="width: 100%; height: 100%;">
+        <div class="cell editor-fullheight" id="rte">
+            <textarea class="hidden tinymce-editor" name="wysiwygContent" id="wysiwygTextarea" style="display: none;" aria-hidden="true"></textarea>
+        <iframe frameborder="0" id="wysiwygTextarea_ifr" src='javascript:""' allowtransparency="true" title="{#aria.rich_text_area}" style="width: 100%; height: 100%; display: block;" tabindex="1"></iframe></div>
+    <div class="editor-notifications-container" id="editor-notification-container"></div></div>
+    <div class="hidden" id="editor-html-source-container">
+        <textarea class="monospaceInput" id="editor-html-source"></textarea>
+    </div>
+
+    <div id="preview" class="hidden">
+                        <div class="cell" id="previewArea">
+        </div>
+    </div>
+
+    
+
+<div id="savebar-container">
+    <div class="aui-toolbar" id="rte-savebar">
+
+                    
+        
+        <div class="toolbar-split toolbar-split-row">
+            <div class="toolbar-split toolbar-split-left">
+            <ul class="toolbar-group">
+                                                                                            <li class="toolbar-item">
+                        <a title="Edit Page Restrictions" id="rte-button-restrictions" href="#" class="toolbar-trigger">
+                            <span class="icon icon-unlocked"></span>
+                            <span class="trigger-text">Unrestricted</span>
+                        </a>
+                    </li>
+                                                                            <li class="toolbar-item">
+                        <a title="Insert Attachment" id="rte-button-attachments" href="#" class="toolbar-trigger">
+                            <span class="icon icon-attachment"></span>
+                            <span class="trigger-text">Attachments</span>
+                        </a>
+                    </li>
+                                                                            <li class="toolbar-item">
+                        <a title="Edit Page Labels" id="rte-button-labels" href="#" class="toolbar-trigger">
+                            <span class="icon icon-labels"></span>
+                            <span class="trigger-text">Labels</span>
+                        </a>
+                    </li>
+                                                                            <li class="toolbar-item">
+                        <a title="Edit Page Location" id="rte-button-location" href="#" class="toolbar-trigger">
+                            <span class="icon icon-location"></span>
+                            <span class="trigger-text">Location</span>
+                        </a>
+                    </li>
+                            </ul>
+                    </div>
+            <div class="toolbar-split toolbar-split-right">
+            <div id="toolbar-group-minor-edit" class="toolbar-group">
+                <ul style="display:none;" id="toolbar-group-watch-page-after-comment" class="toolbar-group toolbar-group-watch-page">
+                    <li class="toolbar-item">
+                        <label for="watchPage">Watch this page</label>
+                        <input type="checkbox" value="true" name="watchPageAfterComment" id="watchPage" />
+                    </li>
+                </ul>
+                                            </div>
+
+        
+            <ul class="toolbar-group toolbar-group-edit assistive">
+                <li class="toolbar-item">
+                    <a href="#" title="Return To Edit Mode ( Type 'e' )" class="toolbar-trigger" id="rte-button-edit">&lt; Edit</a>
+                </li>
+            </ul>
+            <ul class="toolbar-group toolbar-group-preview">
+                <li class="toolbar-item">
+                    <a href="#" class="toolbar-trigger" title="Preview ( Type '⌘+⇧+E' )" id="rte-button-preview">Preview &gt;</a>
+                    <span class="icon loading hidden" id="wysiwygWaitImage">Loading…</span>
+                </li>
+            </ul>
+
+        
+            <ul class="toolbar-group">
+                <li class="toolbar-item">
+                                            <button name="confirm" value="Save" id="rte-button-publish" title="Save ( Type '⌘+S' )" type="submit" class="toolbar-trigger">Save</button>
+                                    </li>
+            </ul>
+            <ul class="toolbar-group">
+                <li class="toolbar-item toolbar-item-link">
+                    <button name="cancel" value="Cancel" id="rte-button-cancel" type="submit" class="toolbar-trigger">Cancel</button>
+                </li>
+            </ul>
+
+        </div>         </div>
+                    <div class="toolbar-split toolbar-split-row">
+                <div class="toolbar-split toolbar-split-left">
+                    <div class="hints hints-open">
+                        <span class="hints-controls">
+                            <a title="Next hint" class="hints-next" href="#"><span class="icon">Next hint</span></a>
+                        </span>
+                        <span class="hints-text">Hint: press <strong>⌘M</strong> to open the image browser.</span>
+                    </div>
+                </div>
+                <div class="toolbar-split toolbar-split-right">
+                    <div id="draft-status"></div>
+                </div>
+            </div>
+             </div> </div>
+
+ 
+            <div class="hidden" id="link-browser-tab-items">
+                <div data-weight="10" title="Search">search</div>
+            <div data-weight="20" title="Recently Viewed">recentlyviewed</div>
+            <div data-weight="30" title="Attachments">attachments</div>
+            <div data-weight="40" title="Web Link">weblink</div>
+            <div data-weight="50" title="Advanced">advanced</div>
+    </div>
+    
+
+
+                        
+    
+                        
+    
+                                                                                                                                                                                                                                                                
+            		        		        		        		        		        		        		        		        	
+    
+
+<div class="hidden" id="hidden-permission-fields">
+    <input type="text" value="" name="viewPermissionsUsers" id="viewPermissionsUsers" />
+    <input type="text" value="" name="editPermissionsUsers" id="editPermissionsUsers" />
+    <input type="text" value="" name="viewPermissionsGroups" id="viewPermissionsGroups" />
+    <input type="text" value="" name="editPermissionsGroups" id="editPermissionsGroups" />
+</div>
+
+<script title="tableForm" type="text/x-template">
+    &lt;form id="tinymce-table-form" class="aui"&gt;
+        &lt;div class="field-group"&gt;
+            &lt;label for="rows"&gt;Rows&lt;/label&gt;
+            &lt;input id="rows" name="rows" type="text" size="3" autocomplete="off" value="{0}"&gt;
+        &lt;/div&gt;
+        &lt;div class="field-group"&gt;
+            &lt;label for="cols"&gt;Columns&lt;/label&gt;
+            &lt;input id="cols" name="cols" type="text" size="3" autocomplete="off" value="{1}"&gt;
+        &lt;/div&gt;
+        &lt;div class="field-group hidden"&gt;
+            &lt;input id="width" type="hidden" name="width" value=""&gt;
+            &lt;label for="width"&gt;Width&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="group"&gt;
+            &lt;div class="checkbox"&gt;
+                &lt;input id="table-heading-checkbox" class="checkbox" type="checkbox" name="heading" checked="checked" value="true"&gt;
+                &lt;label for="table-heading-checkbox"&gt;First row is heading&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="group hidden"&gt;
+            &lt;div class="checkbox"&gt;
+                &lt;input id="table-equal-width-columns-checkbox" class="checkbox" type="checkbox" name="equal-width-columns" value="false"&gt;
+                &lt;label for="table-equal-width-columns-checkbox"&gt;Equal width columns&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+</script><script title="labels-dialog-div" type="text/x-template">
+        &lt;div id="labels-dialog"&gt;
+        &lt;div class="labels-editor"&gt;
+            &lt;form method="GET" action="" id="add-labels-form"&gt;
+                &lt;div id="labelOperationErrorContainer"&gt;
+                    &lt;span class="error"&gt;&lt;span class="errorMessage" id="labelOperationErrorMessage"&gt;&lt;/span&gt;&lt;/span&gt;
+                &lt;/div&gt;
+    
+                &lt;div id="label-input-fields"&gt;
+                    &lt;input autocomplete="off" id="labelsString" name="labelsString" value=""&gt;
+                    &lt;input id="add-labels-editor-button" type="submit" class="add-labels" value="Add"&gt;
+                &lt;/div&gt;
+                &lt;div id="labelsAutocompleteList" class="aui-dd-parent resize-to-input" style="width: 417px"&gt;&lt;/div&gt;
+                &lt;div id="dialog-label-list"&gt;
+                    &lt;!-- DIV placeholder for labels list, is copied into in labels-dialog.js --&gt;
+                &lt;/div&gt;
+                &lt;div id="waitImageAndStatus"&gt;
+                    &lt;img class="waiting" alt="Please wait" src="/s/en_GB/3289/1/_/images/icons/wait.gif"&gt;&amp;nbsp;
+                    &lt;span id="labelOperationStatus" class="smalltext"&gt;&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="labels-tip"&gt;&lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+        &lt;div style="display: none;"&gt;
+            &lt;div class="labels-section-content content-column"
+    		&gt;
+	&lt;div class="labels-content"&gt;
+		
+
+&lt;ul class="label-list"&gt;
+    &lt;li class="no-labels-message-container"&gt;
+        &lt;span id="labels-section-title-none" class="no-labels-message"&gt;
+            None
+        &lt;/span&gt;
+    &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;        &lt;/div&gt;
+    &lt;/div&gt;
+</script>
+
+        <input type="hidden" value="" name="parentPageString" id="parentPageString" />
+        <input type="hidden" value="true" name="moveHierarchy" id="hierarchy_checkbox" />
+        <input type="hidden" value="" name="position" id="position" />
+        <input type="hidden" value="" name="targetId" id="targetId" />
+        <input type="hidden" value="884795" name="draftId" id="draftId" />
+        <input type="hidden" value="884795" name="entityId" id="entityId" />
+                <input type="hidden" value="ds" name="newSpaceKey" id="newSpaceKey" />
+</form>
+        
+    
+
+            
+</div>
+
+
+    
+
+
+
+    
+    
+
+
+
+    
+
+
+        
+
+
+    <br class="clear" />
+</div>
+
+
+        
+            <div id="footer">
+                        
+    <ul id="poweredby">
+        <li class="noprint">Powered by <a class="hover-footer-link" href="http://www.atlassian.com/software/confluence">Atlassian Confluence</a> <span id="footer-build-information">4.2.8</span>, the <a class="hover-footer-link" href="http://www.atlassian.com/software/confluence/tour/enterprise-wiki.jsp">Enterprise Wiki</a></li>
+        <li class="print-only">Printed by Atlassian Confluence 4.2.8, the Enterprise Wiki.</li>        
+        <li class="noprint">  ·  <a class="hover-footer-link" href="http://jira.atlassian.com/secure/BrowseProject.jspa?id=10470">Report a bug</a></li>
+        <li class="noprint">  ·  <a class="hover-footer-link" href="http://www.atlassian.com/about/connected.jsp?s_kwcid=Confluence-stayintouch">Atlassian News</a></li>
+    </ul>
+
+            
+    </div>
+    </div>
+
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div id="fancybox-bg-n" class="fancybox-bg"></div><div id="fancybox-bg-ne" class="fancybox-bg"></div><div id="fancybox-bg-e" class="fancybox-bg"></div><div id="fancybox-bg-se" class="fancybox-bg"></div><div id="fancybox-bg-s" class="fancybox-bg"></div><div id="fancybox-bg-sw" class="fancybox-bg"></div><div id="fancybox-bg-w" class="fancybox-bg"></div><div id="fancybox-bg-nw" class="fancybox-bg"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a id="fancybox-left" href="javascript:;"><span id="fancybox-left-ico" class="fancy-ico"></span></a><a id="fancybox-right" href="javascript:;"><span id="fancybox-right-ico" class="fancy-ico"></span></a></div></div><div id="content-hover-shadow" style="display: none;"><div class="tl"></div><div class="tr"></div><div class="l"></div><div class="r"></div><div class="bl"></div><div class="br"></div><div class="b"></div></div><div id="fileuploadShim" style="position: relative; z-index: 0;"></div><div id="p174fii9aq1v4f1fo71lmg177fker0_html5_container" style="position: absolute; background: none repeat scroll 0% 0% transparent; width: 994px; height: 0px; overflow: hidden; z-index: -1; opacity: 0; top: 709px; left: 0px;" class="plupload html5"><input type="file" multiple="multiple" accept="" style="font-size: 999px; position: absolute; width: 100%; height: 100%;" id="p174fii9aq1v4f1fo71lmg177fker0_html5" /></div><div class="aui-popup aui-dialog" id="drag-and-drop-progress-dialog" style="margin-top: -200px; margin-left: -300px; width: 600px; height: 400px; background: none repeat scroll 0% 0% rgb(255, 255, 255); z-index: 3002; display: none;"><div class="dialog-components"><h2 class="dialog-title">Attach File(s)</h2><ul class="dialog-page-menu" style="height: 304px; display: none;"><li class="page-menu-item selected"><button class="item-button">Panel 1</button></li></ul><div class="dialog-page-body"><div class="dialog-panel-body" style="height: 314px; padding: 0px;"><ul id="upload-statuses"></ul></div></div><div class="dialog-button-panel"><button class="button-panel-button all-file-uploads-complete">Done</button></div></div></div><div id="p174fii9av1pbcjdh1td71q461d3j4_html5_container" style="position: absolute; background: none repeat scroll 0% 0% transparent; width: 994px; height: 0px; overflow: hidden; z-index: -1; opacity: 0; top: 709px; left: 0px;" class="plupload html5"><input type="file" multiple="multiple" accept="" style="font-size: 999px; position: absolute; width: 100%; height: 100%;" id="p174fii9av1pbcjdh1td71q461d3j4_html5" /></div><div class="aui-popup aui-dialog" id="image-effects-dialog" style="margin-top: -205px; margin-left: -230px; width: 460px; height: 410px; background: none repeat scroll 0% 0% rgb(255, 255, 255); z-index: 3004; display: none;"><div class="dialog-components"><h2 class="dialog-title">Add Image Effect</h2><ul class="dialog-page-menu" style="height: 314px; display: none;"><li class="page-menu-item selected"><button class="item-button">imgs</button></li></ul><div class="dialog-page-body"><div class="dialog-panel-body" style="height: 304px;"><div class="image-effects"><ul class="image-list"><li class="attached-image image-effect-preview image-effect-none"><div class="image-container"><img width="100" height="90" style="margin-top: 5px;" title="None" src="/plugins/servlet/imgFilter.png?preview=true&amp;id=6&amp;effects=null" class="thumbnail" /></div><span title="None" class="caption filename">None</span></li><li class="attached-image image-effect-preview"><div class="image-container"><img width="100" height="90" style="margin-top: 5px;" title="Taped" src="/plugins/servlet/imgFilter.png?preview=true&amp;id=6&amp;effects=border-simple,blur-border,tape" class="thumbnail" /></div><span title="Taped" class="caption filename">Taped</span></li><li class="attached-image image-effect-preview"><div class="image-container"><img width="100" height="90" style="margin-top: 5px;" title="Instant Camera" src="/plugins/servlet/imgFilter.png?preview=true&amp;id=6&amp;effects=border-polaroid,blur-border" class="thumbnail" /></div><span title="Instant Camera" class="caption filename">Instant Camera</span></li><li class="attached-image image-effect-preview"><div class="image-container"><img width="100" height="90" style="margin-top: 5px;" title="Curl Shadow" src="/plugins/servlet/imgFilter.png?preview=true&amp;id=6&amp;effects=border-simple,shadow-kn" class="thumbnail" /></div><span title="Curl Shadow" class="caption filename">Curl Shadow</span></li><li class="attached-image image-effect-preview"><div class="image-container"><img width="100" height="90" style="margin-top: 5px;" title="Snapshot" src="/plugins/servlet/imgFilter.png?preview=true&amp;id=6&amp;effects=border-simple,blur-border" class="thumbnail" /></div><span title="Snapshot" class="caption filename">Snapshot</span></li><li class="attached-image image-effect-preview"><div class="image-container"><img width="100" height="90" style="margin-top: 5px;" title="Drop Shadow" src="/plugins/servlet/imgFilter.png?preview=true&amp;id=6&amp;effects=drop-shadow" class="thumbnail" /></div><span title="Drop Shadow" class="caption filename">Drop Shadow</span></li></ul></div></div></div><div class="dialog-button-panel"><a href="#" class="button-panel-link button-panel-cancel-link">Close</a></div></div></div></body></html>
